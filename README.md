@@ -33,9 +33,17 @@ siga esse tutorial ate começar a instalar os plugins: https://www.alura.com.br/
 pula pra troca parte de troca de thema, dessa vez eu to usando o strug, mas to querendo olhar o meu ultimo, era bem bom.
 logo em seguida para instalar os plugins vai para o zinit esse é o link para consulta, mas eu vou deixar os comandos aqui: https://github.com/zdharma-continuum/zinit
 
-pra baixar: bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+pra baixar: 
 
-pra instalar automaticamente: zinit self-update
+```git
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+```
+
+pra instalar automaticamente: 
+
+```git
+zinit self-update
+```
 
 vc vai abrir o arquivo zshrc com o comando: sudo nano ~/.zshrc e vai colocar essas linhas no final tem q ficar +- assim
 ### End of Zinit's installer chunk (essa linha ja ta no arquivo)
@@ -47,3 +55,25 @@ zinit light zsh-users/zsh-completions
 
 
 quando vc salvar e sair, ele vai baixar e instalar as extenções.
+
+agora vamo pro docker.
+eu to seguindo um tutorial da trybe.
+
+1. Então começamos removendo versões anteriores com: 
+```git 
+sudo apt-get remove docker* containerd runc
+```
+
+Caso nenhum dos pacotes esteja instalado, esse comando retornará o erro E: Impossível encontrar o <nome-do-pacote>. Nesse caso, é só prosseguir com a instalação.
+
+2. Instalando as dependências iniciais
+Para habilitar a obtenção dos repositórios via HTTPS pelo apt-get, instale os pacotes listados abaixo. Nós precisamos disso para prosseguir a instalação:
+
+```git
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
