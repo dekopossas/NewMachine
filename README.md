@@ -30,7 +30,14 @@ mas eu estou aqui para melhorar a sua vida!
 
 siga esse tutorial ate começar a instalar os plugins: https://www.alura.com.br/artigos/oh-my-zsh-melhorando-produtividade-terminal
 
-pula pra troca parte de troca de thema, dessa vez eu to usando o strug, mas to querendo olhar o meu ultimo, era bem bom.
+pula pra troca parte de troca de thema, dessa vez eu to usando o strug, mas to querendo olhar o meu ultimo, era bem bom. Acabei de consultar e usava o "refined"
+ele é bem clean, bem bom, mas não mostra a maquina, por isso q troquei pro strug, quero ter noção de ql maquina eu estou mexendo quando estou dentro do git. Mas se vc so mexe de uma maquina, o refined é bem ótimo!
+
+hoje eu to usando um windows e um linux, então no meu linux eu coloquei o omni, que muda as cores do terminal. É bem sutil mas faz diferença, pra quem gosta, só vai nesse link:
+https://github.com/getomni/gnome-terminal/blob/main/INSTALL.md
+
+desisti de colocar no teriminal do windows, justamente pq faz muita pouca diferença
+
 logo em seguida para instalar os plugins vai para o zinit esse é o link para consulta, mas eu vou deixar os comandos aqui: https://github.com/zdharma-continuum/zinit
 
 pra baixar: 
