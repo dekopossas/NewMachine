@@ -17,6 +17,9 @@ então procurei o docker pra instalar, senti muita falta do *oh my zsh*, então 
 vc vai precisar do git pra instalar o *oh my zsh*
 
 então usei esse passo a passo: https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04-pt
+obs:(pulei a parte "Como instalar o Git do código").
+
 e o curl tbm: https://www.alura.com.br/artigos/curl-como-usar 
 
 https://www.alura.com.br/artigos/oh-my-zsh-melhorando-produtividade-terminal
+aqui vc pode encontrar o problema que eu acabei de encontrar que é o terminal não entrar com o zsh direto, esse problema acontece pq vc nao reiniciou o ubuntu, (minha suspeita)
