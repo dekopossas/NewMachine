@@ -40,7 +40,10 @@ pra instalar automaticamente: zinit self-update
 vc vai abrir o arquivo zshrc com o comando: sudo nano ~/.zshrc e vai colocar essas linhas no final tem q ficar +- assim
 ### End of Zinit's installer chunk (essa linha ja ta no arquivo)
 zinit light zdharma/fast-syntax-highlighting
+
 zinit light zsh-users/zsh-autosuggestions
+
 zinit light zsh-users/zsh-completions
+
 
 quando vc salvar e sair, ele vai baixar e instalar as extenções.
