@@ -24,3 +24,23 @@ e o curl tbm: https://www.alura.com.br/artigos/curl-como-usar
 https://www.alura.com.br/artigos/oh-my-zsh-melhorando-produtividade-terminal
 aqui vc pode encontrar o problema que eu acabei de encontrar que é o terminal não entrar com o zsh direto, esse problema acontece pq vc nao reiniciou o ubuntu, (minha suspeita)
 Reiniciei aqui e era o que eu suspeitava mesmo, caso não seja o seu caso siga esse passo a passo: https://diolinux.com.br/sistemas-operacionais/como-alterar-o-terminal-padrao-bash-zsh.html
+
+Pqp, instalar o zsh é dificil kkkkkkk, eu imagina descrever aqui, quase nada funciona direito, os videos estão velhos e os links atualizados então os processos são diferentes, mas eu vou fazer um passo a passo melhor aqui.
+mas eu estou aqui para melhorar a sua vida!
+
+siga esse tutorial ate começar a instalar os plugins: https://www.alura.com.br/artigos/oh-my-zsh-melhorando-produtividade-terminal
+
+pula pra troca parte de troca de thema, dessa vez eu to usando o strug, mas to querendo olhar o meu ultimo, era bem bom.
+logo em seguida para instalar os plugins vai para o zinit esse é o link para consulta, mas eu vou deixar os comandos aqui: https://github.com/zdharma-continuum/zinit
+
+pra baixar: bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+pra instalar automaticamente: zinit self-update
+
+vc vai abrir o arquivo zshrc com o comando: sudo nano ~/.zshrc e vai colocar essas linhas no final tem q ficar +- assim
+### End of Zinit's installer chunk (essa linha ja ta no arquivo)
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+
+quando vc salvar e sair, ele vai baixar e instalar as extenções.
