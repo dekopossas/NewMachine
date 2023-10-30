@@ -168,4 +168,27 @@ O terminal deve retornar uma mensagem com dicas, conforme a seguir:
 
 depois eu vou tentar formatar esse passo a passo, copiei ele todo pq é da trybe e eu nao vou ter o acesso pra sempre, esse passo a passo é muito bom!
 
+gerando uma nova chave ssh, essa parte é tensa to pegando na trybe tbm:
 
+Se vc precisar de links para o gui, tem sempre links do git como :
+https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+mas começaremos gerando uma chave
+```git
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+Nessa parte é MUITO IMPORTANTE vc ler e não fazer errado que vai te polpar muito tempo, a primeira pergunta é sobre o diretorio da chave!
+eu recomendo vc não mudar nada e deixar o diretorio padrão, a mens q vc saiba o que esta fazendo, não mude o nome tbm, é apenas pro seu computador saber onde está o arquivo.
+
+depois é senha, não tem, segredo.
+
+Adicionar sua chave SSH ao ssh-agent 
+```git
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+Esse é o comando pra mostrar a chave publica
+```git
+cat ~/.ssh/id_ed25519.pub
+```
